@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    // Math.min 최솟값 구하기, 객체 배열은 전개 구문(spread operation)으로 펼쳐주기
+    // 반대로 최댓값 Math.max
+    function solution(arr) {
+      let answer = Math.min(...arr);
+
+      return answer;
+    }
+
+    let arr = [5, 7, 4, 3, 2, 9, 11];
+    console.log(solution(arr));
+  </script>
+</body>
+
+</html>
