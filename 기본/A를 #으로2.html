@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    // string은 값이 바뀌는 것이지 참조가 아니다.
+    function solution(s) {
+      let answer = s;
+      answer = answer.replace(/A/g, '#');
+      return answer;
+    }
+
+    let str = "BANANA";
+    console.log(solution(str));
+  </script>
+</body>
+
+</html>
