@@ -1,0 +1,25 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    // 문자열.indexOf(a, b) : a에 해당하는 문자열, b인덱스부터 찾아라 / 없다면 -1 리턴
+    function solution(s) {
+      let answer = "";
+      for (let i = 0; i < s.length; i++) {
+        if (s.indexOf(s[i]) === i) {
+          answer += s[i]
+        }
+      }
+
+      return answer;
+    }
+    console.log(solution("ksekkset"));
+  </script>
+</body>
+
+</html>
