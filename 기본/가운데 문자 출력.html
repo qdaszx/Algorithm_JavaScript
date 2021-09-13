@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    // Math.floor : 소수점 자리 제거, 문자열.substring(a, b) : a부터 b전까지, 문자열.substr(a, b) : a인덱스부터 b개 짤라서 갖고와라.
+    function solution(s) {
+      let answer = "";
+      let mid = Math.floor(s.length / 2);
+      if (s.length % 2 === 1) {
+        answer = s.substring(mid, mid + 1);
+      } else {
+        answer = s.substring(mid - 1, mid + 1);
+      }
+
+      return answer;
+    }
+    console.log(solution("good"));
+  </script>
+</body>
+
+</html>
