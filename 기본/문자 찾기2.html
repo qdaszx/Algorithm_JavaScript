@@ -1,0 +1,21 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    // 마지막 문자열이 들어가면 마지막에 빈 문자열이 들어간다.
+    function solution(s, t) {
+      let answer = s.split(t).length;
+      return answer - 1;
+    }
+
+    let str = "COMPUTERPROGRAMMING";
+    console.log(solution(str, 'R'));
+  </script>
+</body>
+
+</html>
