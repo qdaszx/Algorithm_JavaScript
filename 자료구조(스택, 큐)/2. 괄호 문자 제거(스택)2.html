@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    /**
+    * 1. 닫는 괄호가 나오기 전까지 다 스택에 넣어줍니다.
+    * 2. 닫는 괄호가 나오면 스택에 들어가 문자열 빼고 짝이 맞는 여는 괄호까지 제거
+    */
+    function solution(s) {
+      let answer;
+      let stack = [];
+      for (let x of s) {
+        if (x === ")") {
+          while (stack.pop() !== "(");
+        } else {
+          stack.push(x);
+        };
+      }
+      answer = stack.join("");
+      return answer;
+    }
+
+    let str = "(A(BC)D)EF(G(H)(IJ)K)LM(N)";
+    console.log(solution(str));
+  </script>
+</body>
+
+</html>
