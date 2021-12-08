@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>출력결과</title>
+</head>
+
+<body>
+  <script>
+    function solution(n) {
+      function DFS(L) {
+        if (L === 0) {
+          return;
+        }
+        DFS(L - 1);
+        console.log(L);
+      }
+      DFS(n)
+    }
+    solution(3);
+    /*
+    재귀 함수
+    스택이라는 자료구조를 쓴다.
+    */
+  </script>
+</body>
+
+</html>
